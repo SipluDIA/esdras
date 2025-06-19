@@ -161,7 +161,8 @@ At Esdras Consultants, we don’t just help you look good—we help you be unfor
             <div class="form-div">
             <div class="form-container">
                 <h2>Let us know which service you need, we’ll reply in a jiffy!</h2>
-                <form action="submit_form.php" method="POST">
+                <form name="contact" method="POST" data-netlify="true">
+                 <input type="hidden" name="subject" value="New message from your site" />
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
