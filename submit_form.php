@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "</body></html>";
 
     if (mail($to, $subject, $message, $headers)) {
-        header("Refresh: 5; url=/");
+        header("Refresh: 4; url=/");
         echo "Email sent successfully. Redirecting to homepage in 5 seconds...";
         exit;
 
